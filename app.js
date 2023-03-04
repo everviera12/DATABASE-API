@@ -7,12 +7,12 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 /* ============ CONEXIÓN A MYSQL ============ */
-// const conexion = mysql.createConnection({
-//   host: "127.0.0.1",
-//   user: "root",
-//   password: "root123",
-//   database: "prueba",
-// });
+const conexion = mysql.createConnection({
+  host: "127.0.0.1",
+  user: "root",
+  password: "root123",
+  database: "prueba",
+});
 
 conexion.connect((err) => {
   if (err) {
